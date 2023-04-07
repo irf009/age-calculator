@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inputs">
+          <div class="day">
+            <h5 class="day-text">DAY</h5>
+            <input type="text" id="day-input" placeholder="DD" />
+            <p class="valid-value-day none">ENTER A VALID VALUE</p>
+          </div>
+          <div class="month">
+            <h5 class="month-text">MONTH</h5>
+            <input type="text" id="month-input" placeholder="MM" />
+            <p class="valid-value-month none">ENTER A VALID VALUE</p>
+          </div>
+          <div class="year">
+            <h5 class="year-text">YEAR</h5>
+            <input type="text" id="year-input" placeholder="YYYY" />
+            <p class="valid-value-year none">ENTER A VALID VALUE</p>
+          </div>
+        </div>
+        <div class="hr-div">
+          <hr />
+          <svg
+            class="arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="55"
+            height="55"
+            viewBox="0 0 46 44"
+          >
+            <g fill="none" stroke="#FFF" stroke-width="3">
+              <path
+                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="current-age">
+          <h1>
+            <em><span class="current-age-year">--</span> years</em>
+          </h1>
+          <h1>
+            <em><span class="current-age-month">--</span> months</em>
+          </h1>
+          <h1>
+            <em><span class="current-age-day">--</span> days</em>
+          </h1>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
